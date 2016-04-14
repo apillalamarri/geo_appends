@@ -35,7 +35,7 @@ df_merged = df_export.merge(df_zip_info, on='zipcode', how='left')
 df_merged = df_merged[['Mobile #','city']]
 df_merged = df_merged[df_merged.city.notnull()]
 
-#Rename columns with Revere Mobile metadata IDs.
+#Rename columns with Revere Mobile metadata IDs
 #If uploading to SEIU, use
 #df_merged.columns = ['msisdn','4f83b5a349f0237df0577898']
 df_merged.columns = ['msisdn','4f83b5a349f0237df0577895']
