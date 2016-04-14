@@ -37,8 +37,8 @@ df_merged = df_merged[df_merged.city.notnull()]
 
 #Rename columns with Revere Mobile metadata IDs
 #If uploading to SEIU, use
-#df_merged.columns = ['msisdn','4f83b5a349f0237df0577898']
-df_merged.columns = ['msisdn','4f83b5a349f0237df0577895']
+#df_merged.columns = ['msisdn','4f83b5a349f0237df0577898'] #SEIU platform
+df_merged.columns = ['msisdn','4f83b5a349f0237df0577895'] #Main platform
 
 #Send dv_merged to a csv, eliminating the index
 df_merged.to_csv(filename[0:-4]+'_city_append.csv',sep=',',index=False)
